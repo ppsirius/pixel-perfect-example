@@ -1,0 +1,16 @@
+/* Define Your Font Stack & Sizes */
+$font-stack: 'Arial', sans-serif;
+$base-font: 16;
+$base-font-size: ($base-font * 1px) !default;
+$base-line-height: 1.4;
+$light: 300;
+$regular: 400;
+$bold: 700;
+
+/* Base Colors */
+$body-background: #fff;
+$primary-text: #222;
+
+/* Other Variables */
+$gutter: 20px;
+$border-radius: 6px;

@@ -1,0 +1,68 @@
+/* Detect media in javascript */
+.viewports {
+	font-family: mobile;
+
+	@include breakpoint(small-tablet) {
+		font-family: small-tablet;
+	}
+
+	@include breakpoint(over-mobile) {
+		font-family: over-mobile;
+	}
+
+	@include breakpoint(small-desktop) {
+		font-family: small-desktop;
+	}
+
+	@include breakpoint(desktop) {
+		font-family: desktop;
+	}
+}
+
+// IE svg size fix
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	img[src*=".svg"], svg {
+		width: 100%;
+		height: 100%;
+	}
+}
+
+/* Align text */
+.align-left {
+	text-align: left;
+}
+
+.align-right {
+	text-align: right;
+}
+
+.align-center {
+	text-align: center;
+}
+
+/* Show and hide element */
+.hide {
+	display: none;
+}
+
+.hide-desktop {
+	@include breakpoint(desktop) {
+		display: none;
+	}
+}
+
+.hide-mobile-tablet {
+	display: none;
+
+	@include breakpoint(small-desktop) {
+		display: block;
+	}
+}
+
+.hide-mobile {
+	display: none;
+
+	@include breakpoint(over-mobile) {
+		display: block;
+	}
+}
