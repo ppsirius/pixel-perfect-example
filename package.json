@@ -29,7 +29,7 @@
     "rimraf": "2.6.1",
     "sass-loader": "6.0.6",
     "webpack": "3.5.5",
-    "webpack-dev-server": "^3.0.0"
+    "webpack-dev-server": "3.9.0"
   },
   "browserslist": [
     "last 8 versions"
